@@ -1,0 +1,11 @@
+{
+  "name": "ncrypt",
+  "version": "0.0.1",
+  "description": "A simple file encryption and decryption program.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jake M. Rieger",
+  "license": "MIT"
+}
