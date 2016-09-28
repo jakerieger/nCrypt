@@ -1,9 +1,20 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none;
+}
+
 html, body {
   margin: 0px;
   padding: 0px;
-  background: #DDE4E6/*#E4DDE2*/;
+  background: #DDE4E6;
   color: #333;
   font-family: 'Lato', sans-serif;
 }
@@ -48,4 +59,50 @@ li p {
 
 #header {
   border-bottom: 1px solid #BDC3C7;
+  margin-bottom: 15px;
+}
+
+input {
+  border: 1px solid #BDC3C7;
+  height: 30px;
+  text-indent: 7px;
+}
+
+#file-input {
+  width: 490px;
+}
+
+#password-input {
+  width: 540px;
+}
+
+button {
+  border: none;
+  /*background: #3498DB;*/
+  background: none;
+  border-bottom: 2px solid #3498DB;
+  color: #333; /*#ECF0F1;*/
+}
+
+#openf-btn {
+  height: 31px;
+  width: 36px;
+  margin-left: 5px;
+}
+
+#encrypt-btn {
+  height: 31px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+#decrypt-btn {
+  height: 31px;
+  width: 100px;
+  margin-left: 5px;
+}
+
+#openf-btn:hover {
+  border-bottom-color: #2980B9;
+  margin-left: 6px;
 }
