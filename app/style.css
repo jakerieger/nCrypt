@@ -3,20 +3,8 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background: #E4DDE2;
+  background: #333/*#E4DDE2*/;
   color: white;
-}
-
-.titlebar {
-  font-family: 'Lato', sans-serif;
-  -webkit-app-region: drag;
-  background: #528CAE;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-left: 20px;
-  width: 100%;
 }
 
 ul {
@@ -27,6 +15,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border-bottom: 1px solid #444;
 }
 
 li {
@@ -42,7 +31,6 @@ li a {
   -webkit-app-region: no-drag;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
   -webkit-app-region: no-drag;

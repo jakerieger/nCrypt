@@ -1,3 +1,7 @@
+// main.js
+// created by Jake M. Rieger
+//
+
 const {app, BrowserWindow} = require('electron')
 
 let win
