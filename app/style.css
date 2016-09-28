@@ -3,19 +3,19 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background: #333/*#E4DDE2*/;
-  color: white;
+  background: #DDE4E6/*#E4DDE2*/;
+  color: #333;
+  font-family: 'Lato', sans-serif;
 }
 
 ul {
-  font-family: 'Lato', sans-serif;
   -webkit-app-region: drag;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  border-bottom: 1px solid #444;
+  background-color: #ECF0F1;
+  border-bottom: 1px solid #3498DB;
 }
 
 li {
@@ -24,7 +24,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #333;
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
@@ -32,10 +32,20 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #3498DB;
+  color: #ECF0F1;
   -webkit-app-region: no-drag;
 }
 
 li p {
   padding-left: 20px;
+}
+
+#content {
+  padding: 30px;
+  color: #333;
+}
+
+#header {
+  border-bottom: 1px solid #BDC3C7;
 }
