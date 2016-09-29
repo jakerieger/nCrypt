@@ -90,19 +90,18 @@ button {
   margin-left: 5px;
 }
 
+button:hover {
+  border-bottom-color: #2980B9;
+}
+
 #encrypt-btn {
   height: 31px;
   width: 100px;
-  margin-left: 5px;
+  margin-left: 160px;
 }
 
 #decrypt-btn {
   height: 31px;
   width: 100px;
   margin-left: 5px;
-}
-
-#openf-btn:hover {
-  border-bottom-color: #2980B9;
-  margin-left: 6px;
 }
