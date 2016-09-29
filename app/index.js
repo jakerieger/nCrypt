@@ -2,8 +2,9 @@
 // created by Jake M. Rieger
 //
 
-const {app, BrowserWindow} = require('electron')
-const {remote} = require('electron')
+const {app, BrowserWindow, remote} = require('electron')
+const {dialog} = require('electron').remote
+var fs = require('fs')
 var encryptor = require('file-encryptor')
 
 // set title bar text
@@ -19,6 +20,17 @@ document.getElementById('close-btn').addEventListener("click", () => {
 document.getElementById('min-btn').addEventListener("click", () => {
   var window = remote.getCurrentWindow()
   window.minimize()
+})
+
+// open file
+document.getElementById('openf-btn').addEventListener("click", () => {
+  dialog.showOpenDialog((fileNames) => {
+    if (fileNames === undefined) {
+
+    } else {
+      document.getElementById('file-input').value = fileNames[0]
+    }
+  })
 })
 
 // encrypt file
