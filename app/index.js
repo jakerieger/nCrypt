@@ -4,6 +4,7 @@
 
 const {app, BrowserWindow} = require('electron')
 const {remote} = require('electron')
+var encryptor = require('file-encryptor')
 
 // set title bar text
 document.getElementById("titlebar-title").innerHTML = `nCrypt (${process.env.npm_package_version})`
@@ -18,4 +19,20 @@ document.getElementById('close-btn').addEventListener("click", () => {
 document.getElementById('min-btn').addEventListener("click", () => {
   var window = remote.getCurrentWindow()
   window.minimize()
+})
+
+// encrypt file
+document.getElementById('encrypt-btn').addEventListener("click", () => {
+  var inputFile = document.getElementById('file-input').value
+  var outputFile = `${document.getElementById('file-input').value}.yourdatahasbeenencryptedloser`
+  var password = document.getElementById('password-input').value
+  encryptor.encryptFile(inputFile, outputFile, password)
+})
+
+// decrypt file
+document.getElementById('decrypt-btn').addEventListener("click", () => {
+  var inputFile = document.getElementById('file-input').value
+  var outputFile = inputFile.substr(0, inputFile.lastIndexOf('.'))
+  var password = document.getElementById('password-input').value
+  encryptor.decryptFile(inputFile, outputFile, password)
 })
