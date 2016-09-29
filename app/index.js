@@ -36,7 +36,7 @@ document.getElementById('openf-btn').addEventListener("click", () => {
 // encrypt file
 document.getElementById('encrypt-btn').addEventListener("click", () => {
   var inputFile = document.getElementById('file-input').value
-  var outputFile = `${document.getElementById('file-input').value}.bwright`
+  var outputFile = `${document.getElementById('file-input').value}.ncrypt`
   var password = document.getElementById('password-input').value
   encryptor.encryptFile(inputFile, outputFile, password)
 })
