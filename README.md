@@ -15,3 +15,6 @@ Prebuilt binaries can be obtained from one of the following links:
 * [macOS](http://www.domain.com)
 
 To build the source code yourself, you will need to have both Electron and NodeJS installed. To build, you can run either [`start.bat`](https://github.com/jakerieger/nCrypt/blob/master/start.bat) or [`start.sh`](https://github.com/jakerieger/nCrypt/blob/master/start.sh) depending on you operating system, or by running `npm start` from the root directory directory of nCrypt.
+
+## Screenshot
+![](http://i.imgur.com/Xk0Tu8S.jpg)
