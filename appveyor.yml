@@ -1,0 +1,4 @@
+environment:
+  nodejs_version: "6.1"
+
+build: on
