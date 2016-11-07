@@ -8,11 +8,7 @@ nCrypt is a simple utility used to encrypt or decrypt single files with a passwo
 Follow [@rakejieger](https://www.twitter.com/rakejieger) on twitter
 
 ## Downloads
-Prebuilt binaries can be obtained from one of the following links:
-
-* [Windows (x86)](http://www.domain.com)
-* [Windows (x64)](http://www.domain.com)
-* [macOS](http://www.domain.com)
+Prebuilt binaries have not been created yet. You must run from the source.
 
 To build the source code yourself, you will need to have both Electron and NodeJS installed. To build, you can run either [`start.bat`](https://github.com/jakerieger/nCrypt/blob/master/start.bat) or [`start.sh`](https://github.com/jakerieger/nCrypt/blob/master/start.sh) depending on you operating system, or by running `npm start` from the root directory directory of nCrypt.
 
