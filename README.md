@@ -1,5 +1,3 @@
-![](http://vectr.com/jakerieger/vsisib8liI.png?width=475&height=162&select=vsisib8liIpage0&cache=off)
-
 [![Build Status](https://travis-ci.org/jakerieger/nCrypt.svg?branch=master)](https://travis-ci.org/jakerieger/nCrypt)
 [![devDependencies](https://david-dm.org/jakerieger/nCrypt.svg)](https://david-dm.org/jakerieger/nCrypt.svg)
 
